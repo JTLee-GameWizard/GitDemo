@@ -95,7 +95,7 @@
 
 */
 
-// roll back file that haven't get staged yet
+// roll back file that haven't get staged yet, will not roll back if already staged, do a git reset to un-stage.
 //git checkout filename
 
 
