@@ -100,6 +100,7 @@
 
 // rewrite previous commit message
 //git commit --amend -m "new message"
+<<<<<<< HEAD
 
 // open vim to tweak previous commit message
 //git commit --amend 
@@ -118,6 +119,8 @@
 			u				"undo"
 			ctrl + r		"redo"
 */
+=======
+>>>>>>> 9b220c38f1ead5b3b2439060689ca506edab060f
 
 template<typename T>
 T divide(T a, T b)
