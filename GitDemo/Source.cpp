@@ -46,6 +46,7 @@
 		git remote add origin http://username:password@github.com/...
 	2, push (this also redirect the connected remote repo if you change the name origin to the name of another remote repo)
 		git push --set-upstream origin main
+		this can also be written as: git push -u origin main
 	*/
 
 //remove connection to remote repo nameoftheremote should be origin if not complicated
@@ -59,6 +60,9 @@
 
 //switch to branches:
 //git checkout branchname
+
+//push local new branch to remote repo (create the new branch to the remote repo as well)
+//git push -u origin branchname
 
 template<typename T>
 T divide(T a, T b)
