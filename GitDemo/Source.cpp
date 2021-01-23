@@ -95,6 +95,11 @@
 
 */
 
+// roll back file that haven't get staged yet
+//git checkout filename
+
+
+
 template<typename T>
 T divide(T a, T b)
 {
