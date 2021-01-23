@@ -101,8 +101,15 @@ T divide(T a, T b)
 	return a / b;
 }
 
+template<typename T>
+T subtract(T a, T b)
+{
+	return a - b;
+}
+
 #include <iostream>
 int main()
 {
 	std::cout << divide(1, 2) << std::endl;
+	std::cout << subtract(1, 2) << std::endl;
 }
