@@ -27,3 +27,9 @@
 
 //clone remote repo right at the folder, do not create subfolder:
 //git clone https://github.com/glfw/glfw.git .
+
+//show information of the remote repo
+//git remote -v
+
+//show changes
+//git diff
