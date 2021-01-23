@@ -64,6 +64,20 @@
 //push local new branch to remote repo (create the new branch to the remote repo as well)
 //git push -u origin branchname
 
+//steps to merge branch
+/*
+	1, switch back to local main branch
+		git checkout main
+	2, pull from remote main branch just in case other people have worked on it
+		git pull origin main
+	3, (optional) check if branch has been merged.
+		git branch --merged
+	4, merge branchname to main branch locally
+		git merge branchname
+	5, push to remote main branch
+		git push origin main
+*/
+
 template<typename T>
 T divide(T a, T b)
 {
