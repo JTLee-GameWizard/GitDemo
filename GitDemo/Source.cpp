@@ -78,6 +78,23 @@
 		git push origin main
 */
 
+// remove a branch after merging
+/*
+	1, check if the branch is merged
+	git branch --merged
+	2, check if branches are up to date on both local and remote repo
+	git reflog
+	3, push if branch on remote repo is not up to date with local
+	git push -u origin branchname
+	4, delete branch locally
+	git branch -d branchname
+	5, delete branch in remote repo
+	git push origin -d branchname
+	6, check branches again:
+	git branch
+
+*/
+
 template<typename T>
 T divide(T a, T b)
 {
