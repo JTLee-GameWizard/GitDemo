@@ -50,3 +50,24 @@
 
 //remove connection to remote repo nameoftheremote should be origin if not complicated
 //git remote remove nameoftheremote
+
+//add branch
+//git branch branchname
+
+//check branches:
+//git branch
+
+//switch to branches:
+//git checkout branchname
+
+template<typename T>
+T divide(T a, T b)
+{
+	return a / b;
+}
+
+#include <iostream>
+int main()
+{
+	std::cout << divide(1, 2) << std::endl;
+}
