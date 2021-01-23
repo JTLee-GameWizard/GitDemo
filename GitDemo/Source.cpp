@@ -98,7 +98,8 @@
 // roll back file that haven't get staged yet, will not roll back if already staged, do a git reset to un-stage.
 //git checkout filename
 
-
+// rewrite previous commit message
+//git commit --amend -m "new message"
 
 template<typename T>
 T divide(T a, T b)
