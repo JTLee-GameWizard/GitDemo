@@ -101,6 +101,24 @@
 // rewrite previous commit message
 //git commit --amend -m "new message"
 
+// open vim to tweak previous commit message
+//git commit --amend 
+/*
+	hit insert to start editing the file
+		useful shortcut:
+			dd			"delete current line"
+			5 dd			"delete 5 lines from current line"
+
+	hit escape to go to a command mode
+		useful command: 
+			:w				"write the file"
+			:p				"Quit"
+			:wp			"write and quite"
+			:/s				"search"
+			u				"undo"
+			ctrl + r		"redo"
+*/
+
 template<typename T>
 T divide(T a, T b)
 {
