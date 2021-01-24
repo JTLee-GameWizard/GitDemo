@@ -169,5 +169,3 @@ int main()
 	std::cout << subtract(1, 2) << std::endl;
 
 }
-
-cm1 
