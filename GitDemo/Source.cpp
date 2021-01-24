@@ -146,8 +146,6 @@
 		this will roll back, and throw out any untracked changeds. will still keep untracked files(new files) in the untracked area
 */
 
-resethard test
-
 template<typename T>
 T divide(T a, T b)
 {
