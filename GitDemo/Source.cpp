@@ -109,6 +109,16 @@
 	git clean -df
 */
 
+//3 levels of git reset
+/*
+	1, git reset --soft #number
+		this will roll back, but keep the rolled back changes in the staging area.
+	2, git reset --mixed #number
+		this will roll back, and keep the rolled back changes in the untracked area.
+	3, git reset --hard #number
+		this will roll back, and throw out any untracked changeds. will still keep untracked files(new files) in the untracked area
+*/
+
 template<typename T>
 T divide(T a, T b)
 {
