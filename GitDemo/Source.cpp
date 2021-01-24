@@ -167,5 +167,5 @@ int main()
 {
 	std::cout << divide(1, 2) << std::endl;
 	std::cout << subtract(1, 2) << std::endl;
-}
 
+}
