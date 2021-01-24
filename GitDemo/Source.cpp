@@ -192,6 +192,17 @@
 
 //used diffmerge can help you do the diff and merging faster.
 
+//add submodule
+//git submodule add url dir .
+
+//remove submodule
+//git submodule deinit -f -- a/submodule
+//you need to delete 2 folders after:
+//		1, .git/modules/modulename
+//		2, module dir
+
+
+
 template<typename T>
 T divide(T a, T b)
 {
