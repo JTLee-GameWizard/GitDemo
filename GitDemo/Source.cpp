@@ -169,6 +169,3 @@ int main()
 	std::cout << subtract(1, 2) << std::endl;
 }
 
-
-change 1
-change 2
