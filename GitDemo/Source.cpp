@@ -164,6 +164,11 @@
 //Pop stash, going to apply change, and remove the stash from the stash list.
 //git stash pop stash@{stashNum}
 
+//dorp stash. remove the stash and do not apply
+//git stash drop stash@{stashNum}
+
+//clear all stash remove all stashes
+//git stash clear
 
 template<typename T>
 T divide(T a, T b)
