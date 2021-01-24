@@ -95,6 +95,20 @@
 
 */
 
+//Moving commit to another branch
+/*
+	1, check and copy commit hash
+	git log, and copy the #number of the commit you want to move.
+	2, Switch to the branch you want the commint to be moved to
+	git checkout branchname
+	3, cherry pick the commit to your branch, this will not remove the commit from the source, only copy it over
+	git cherry-pick #number
+	4, go back to the previous branch using git checkout, and do a hard reset, #number is which commit you want to roll back to
+	git reset --hard #number
+	5, clean untracked file,s -df means all Directory and Files.
+	git clean -df
+*/
+
 template<typename T>
 T divide(T a, T b)
 {
