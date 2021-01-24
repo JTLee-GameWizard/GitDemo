@@ -13,6 +13,12 @@
 //to stage all 
 //git add -A
 
+//stage all current directory
+//git add .
+
+//to stage only modified and deleted, but not untracked files:
+//git add -u
+
 //to unstage a file
 //git reset filename
 
@@ -37,7 +43,7 @@
 //show detailed log
 //git log
 
-//show oneline log
+//show oneline log and all moves including overwritten commits.
 //git reflog
 
 // show log with changes
@@ -58,13 +64,17 @@
 //add branch
 //git branch branchname
 
-//check branches:
+//list all branches:
 //git branch
+
+//list all branches including remote ones
+//git branch -a
 
 //switch to branches:
 //git checkout branchname
 
-//push local new branch to remote repo (create the new branch to the remote repo as well)
+//push local new branch to remote repo (create the new branch to the remote repo as well,
+//other wise you wound not be able to push, for master to review before merging)
 //git push -u origin branchname
 
 //steps to merge branch
@@ -115,8 +125,8 @@
 	hit escape to go to a command mode
 		useful command: 
 			:w				"write the file"
-			:p				"Quit"
-			:wp			"write and quite"
+			:q				"Quit"
+			:wq			"write and quite"
 			:/s				"search"
 			u				"undo"
 			ctrl + r		"redo"
@@ -124,23 +134,23 @@
 
 //Moving commit to another branch
 /*
-	1, check and copy commit hash
-	git log, and copy the #number of the commit you want to move.
+	1, check and copy commit #number
+		git log, and copy the #number of the commit you want to move.
 	2, Switch to the branch you want the commint to be moved to
-	git checkout branchname
+		git checkout branchname
 	3, cherry pick the commit to your branch, this will not remove the commit from the source, only copy it over
-	git cherry-pick #number
+		git cherry-pick #number
 	4, go back to the previous branch using git checkout, and do a hard reset, #number is which commit you want to roll back to
-	git reset --hard #number
+		git reset --hard #number
 	5, clean untracked file,s -df means all Directory and Files.
-	git clean -df
+		git clean -df
 */
 
 //3 levels of git reset
 /*
 	1, git reset --soft #number
 		this will roll back, but keep the rolled back changes in the staging area.
-	2, git reset --mixed #number
+	2, git reset --mixed #number (this is the default one)
 		this will roll back, and keep the rolled back changes in the untracked area.
 	3, git reset --hard #number
 		this will roll back, and throw out any untracked changeds. will still keep untracked files(new files) in the untracked area
