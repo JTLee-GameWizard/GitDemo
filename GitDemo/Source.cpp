@@ -170,6 +170,8 @@
 //clear all stash remove all stashes
 //git stash clear
 
+//stash can be used to move un-staged change to another branch.
+
 template<typename T>
 T divide(T a, T b)
 {
