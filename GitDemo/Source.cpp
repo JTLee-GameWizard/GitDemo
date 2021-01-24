@@ -162,6 +162,12 @@ T subtract(T a, T b)
 	return result;
 }
 
+template<typename T>
+T Add(T a, T b)
+{
+	return a + b;
+}
+
 #include <iostream>
 int main()
 {
