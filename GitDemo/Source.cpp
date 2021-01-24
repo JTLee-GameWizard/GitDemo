@@ -108,6 +108,14 @@
 
 */
 
+//create a temporay branch and roll back to any previous commit, read the hint
+/*
+	1, check out 
+		git checkout #number
+	2, add the current state to a new branch
+		git branch newbranchname
+*/
+
 // roll back file that haven't get staged yet, will not roll back if already staged, do a git reset to un-stage.
 //git checkout filename
 
