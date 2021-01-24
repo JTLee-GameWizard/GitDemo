@@ -146,6 +146,9 @@
 		this will roll back, and throw out any untracked changeds. will still keep untracked files(new files) in the untracked area
 */
 
+//reverse previous commit without changing history, this one creates a new commit that reverses the changes done in the commit of #number, will not destory previous history
+//git revert #number
+
 template<typename T>
 T divide(T a, T b)
 {
