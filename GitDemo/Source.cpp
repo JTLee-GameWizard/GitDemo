@@ -172,6 +172,8 @@
 
 //stash can be used to move un-staged change to another branch.
 
+//used diffmerge can help you do the diff and merging faster.
+
 template<typename T>
 T divide(T a, T b)
 {
