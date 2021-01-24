@@ -40,6 +40,9 @@
 //show oneline log
 //git reflog
 
+// show log with changes
+//git log --stat
+
 //push local repo to remote empty new repo, here "origin" is an arbitray name, you can change it to whatever, you can add multiple ones if you want
 	/*
 	1, add remote repo as your remote origin master: (the pass word can be your PAT)
@@ -152,7 +155,8 @@ T divide(T a, T b)
 template<typename T>
 T subtract(T a, T b)
 {
-	return a - b;
+	T result = a - b;
+	return result;
 }
 
 #include <iostream>
