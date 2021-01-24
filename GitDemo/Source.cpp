@@ -149,6 +149,19 @@
 //reverse previous commit without changing history, this one creates a new commit that reverses the changes done in the commit of #number, will not destory previous history
 //git revert #number
 
+//git stash to stash changes, this is not applied to your code, neither does it do anything to the status, however, the change is cached, and you can apply it later if you want
+//git stash save "name of the stash"
+
+//check stashes
+//git stash list
+
+//apply stash, this will apply but not remove the stash from the list
+// git stash apply stash@{stashNum}
+
+//Pop stash, going to apply change, and remove the stash from the stash list.
+//git stash pop stash@{stashNum}
+
+
 template<typename T>
 T divide(T a, T b)
 {
